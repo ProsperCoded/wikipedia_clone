@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %} 
+{% load static %}
+    {% block title %} 
+        Encyclopedia 
+    {%endblock %} 
+   
+{% block body %}
+
+<h1>All Pages</h1>
+
+<ul >
+    {% for entry in entries %}
+        <li class="entry_list"><a class = "entries" href = "{{entry}}">{{ entry }}</a></li>
+    {% endfor %}
+</ul>
+<script>
+    anchors = document.getElementsByClassName('entries')
+    if ("{{notification}}" != "None"){
+        alert("{{notification}}")
+    }
+
+</script>
+
+{% endblock %}

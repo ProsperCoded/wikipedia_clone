@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %} 
+    
+{% block title %} 
+        {{entry}} 
+{% endblock %} 
+{% block body %}
+"{% autoescape off %}"
+   <p id="contents"> {{contents|linebreaks}}  </p>
+   "{% endautoescape %}"
+    <br>
+    
+        <a class="btn btn-outline-secondary" href ="{% url 'encyclopedia:edit_entry' entry %}" id="edit" >Edit This Page</a>
+<script>
+    // let paragraph = document.getElementById("contents")
+
+    // paragraph.textContent ="{{contents|linebreaks}}"
+    
+</script>
+{% endblock %}

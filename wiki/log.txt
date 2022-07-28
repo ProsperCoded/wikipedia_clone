@@ -1,0 +1,6 @@
+e2bfb8a (HEAD -> experiment) made finishing touches
+ea49d12 inserted log file
+ee0a957 debuged markdown_interpreter.py
+fe456fe wikipedia_insertion
+d7d98c0 wikipedia insertion
+fa1a2da my first commit i created and added hello.html file
